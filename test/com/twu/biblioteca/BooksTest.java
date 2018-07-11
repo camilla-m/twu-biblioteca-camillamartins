@@ -7,7 +7,7 @@ import static org.junit.Assert.assertEquals;
 
 public class BooksTest {
 
-    Books book = new Books("Elizabeth Eulberg", "The Lonely Hearts Club", 2010);
+    Books book = new Books("Elizabeth Eulberg", "The Lonely Hearts Club", 2010, true);
 
     @Test
     public void shouldReturnAuthorName() {
@@ -27,5 +27,10 @@ public class BooksTest {
     @Test
     public void shouldReturnBooksStringList() {
         assertEquals("The Lonely Hearts Club" + " " + "Elizabeth Eulberg" + " " + 2010, book.toString());
+    }
+
+    @Test
+    public void shouldReturnAvailableBook() {
+        assertEquals(true, book.getAvailability());
     }
 }

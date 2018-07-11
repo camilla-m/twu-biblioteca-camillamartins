@@ -4,7 +4,7 @@ public class BibliotecaApp {
 
     public static void main(String[] args) {
         System.out.println(welcomeMessage());
-        System.out.println(Library.getBooks());
+        Menu.showMenu();
     }
 
     public static String welcomeMessage() {

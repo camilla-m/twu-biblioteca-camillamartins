@@ -10,14 +10,12 @@ import static org.junit.Assert.assertEquals;
 
 public class LibraryTest {
 
-    List<Books> books =  Arrays.asList(new Books("J.K. Rowling", "Harry Potter and the Philosopher's Stone", 1997),
-            new Books("Clean Code", "Uncle Bob", 2008));
+    List<Books> books =  Arrays.asList(new Books("J.K. Rowling", "Harry Potter and the Philosopher's Stone", 1997, true),
+            new Books("Clean Code", "Uncle Bob", 2008, false));
 
     @Test
-    public void shouldReturnEqualListOfBooks() {
+    public void shouldReturnAvailableBooks() {
         assertEquals(books.toString(), Library.getBooks());
     }
-
-
 }
 
