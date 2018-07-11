@@ -30,6 +30,7 @@ public class Menu {
                     System.exit(0);
                 default:
                     System.out.println("Invalid key, press another again.");
+                    showMenu();
                     break;
             }
     }
