@@ -10,7 +10,6 @@ public class BibliotecaAppTests {
     public void shouldReturnWelcomeMessage() {
         assertEquals("Welcome to Biblioteca!", BibliotecaApp.welcomeMessage());
     }
-
 }
 
 

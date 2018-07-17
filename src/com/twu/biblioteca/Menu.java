@@ -14,6 +14,7 @@ public class Menu {
                 "4 to checkout movie / " +
                 "5 to return movie / " +
                 "6 to get available movies / " +
+                "7 to show profile / " +
                 "9 to exit.");
         int keyPressed = scanner.nextInt();
         menuOptions(keyPressed);
@@ -41,6 +42,9 @@ public class Menu {
                     showMenu();
                 case 6:
                     Cinema.getAvailableMovies();
+                    showMenu();
+                case 7:
+                    Login.showProfile();
                     showMenu();
                     case 9:
                     System.exit(0);
